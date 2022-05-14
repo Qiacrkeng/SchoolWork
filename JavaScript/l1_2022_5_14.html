@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./l1.js" defer></script>
+    <style>
+      body {
+        background: linear-gradient(#141e30, #243b55);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      header {
+        text-align: center;
+        color: white;
+      }
+      #app {
+        width: 3em;
+        height: 3em;
+        background: #58a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 1.3em;
+        font-size: 200%;
+        border-radius: 0.3em;
+        color: #03e9f4;
+        transition: all 0.5s;
+      }
+      #app::before{
+          position: absolute;
+      }
+      #app:hover {
+        background: #03e9f4;
+        color: #fff;
+        box-shadow: 0 0 0.2em #03e9f4, 0 0 0.5em #03e9f4, 0 0 0.8em #03e9f4,
+          0 0 1.2em #03e9f4;
+      }
+      footer > button {
+        padding: 1em 1.5em;
+        border-radius: 0.2em;
+        background-color: #58a;
+        border: none;
+        color: white;
+      }
+      footer {
+        margin: 1em;
+      }
+      @keyframes btn_2 {
+        from {
+          transform: rotate(0);
+          margin-left: 0;
+          box-shadow: none;
+          text-shadow: 0 0 0;
+        }
+        to {
+          transform: rotate(3600deg);
+          margin-left: 50%;
+          box-shadow: 0 0 0.3em 0.6em red;
+          text-shadow: 0 0 1em 2em greenyellow;
+        }
+      }
+      @keyframes btn_3 {
+        from {
+          margin-left: 0;
+          box-shadow: none;
+        }
+        50% {
+          opacity: 0.1;
+          box-shadow: 5em 5em 1em cyan;
+        }
+        to {
+          margin-left: 50%;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>作業</h1>
+    </header>
+    <main>
+      <div id="app">演示區</div>
+    </main>
+    <footer>
+      <button id="ti_1">1</button>
+      <button id="ti_2">2</button>
+      <button id="ti_3">3</button>
+    </footer>
+  </body>
+</html>
